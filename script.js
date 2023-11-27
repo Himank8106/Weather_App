@@ -17,6 +17,7 @@ currentTab.classList.add("currentTab");
 getFromSessionStorage();
 
 function switchTab(newTab){
+    notFound.classList.remove("active");
     if(currentTab != newTab){
         currentTab.classList.remove("currentTab");
         currentTab = newTab;
